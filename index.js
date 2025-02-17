@@ -28,6 +28,10 @@ app.get("/schedules", (req,res)=>{
 
 app.get("/login", (req,res)=>{
     res.render("Login.ejs")
+});
+
+app.get("/register",(req,res)=>{
+    res.render("Register.ejs")
 })
 
 app.listen(port,(req,res)=>{
