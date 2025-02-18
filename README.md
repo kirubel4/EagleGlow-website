@@ -10,6 +10,8 @@ ABOUT THE JESON.LOCK PACKAGES
         ===> inorder to see u need to install the node and express see that also on online.
 ABOUT THE EJS FILE.
         ===>it is almost same as html but in ejs files we can use js in it make the web react well so the main pages will be ejs file instade of html the rest can be 
-                html as u want
+                html as u want.
+ABOUT THE HOME PAGE HEADER
+        ===> see the code of the navbar and check the bootstrap official website and select the navbar which should be appled for this job.
 
         
