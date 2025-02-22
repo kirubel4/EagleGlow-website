@@ -14,4 +14,6 @@ ABOUT THE EJS FILE.
 ABOUT THE HOME PAGE HEADER
         ===> see the code of the navbar and check the bootstrap official website and select the navbar which should be appled for this job.
 
+STARTING DATABASE.
+        ===> setting up postgres database
         
