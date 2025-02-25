@@ -5,7 +5,14 @@ import axios from "axios";
 
 const app = express();
 const port = 3000;
-
+const db = new pg.Client({
+    user:"postgres",
+    host: "localhost",
+    // database:"Eagleglow",
+    password:"kirag00d",
+    port: 5432
+});
+db.connect();
 app.use(express.static("public"))
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -30,10 +37,17 @@ app.get("/schedules", (req,res)=>{
 });
 
 app.get("/login", (req,res)=>{
+
     res.render("Login.ejs")
 });
 
 app.get("/register",(req,res)=>{
+
+    const userName =  req.body.name
+    const phoneNumber = req.body.phoneNumber
+    const age =  req.body.age
+    const currentLevel = req.body.level
+    const sex = req.body.sex
     res.render("Register.ejs")
 })
 
