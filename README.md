@@ -17,5 +17,7 @@ ABOUT THE HOME PAGE HEADER
 STARTING DATABASE.
         ===> setting up postgres database
         
-        ===>any better database for this project suggest and keep update the group member 
+        ===>any better database for this project suggest and keep update the group member
+ABOUT THE REGISTERATION:
+        ====> registeration is performed by the age of the custumer and the licence of the parents so no need
         
