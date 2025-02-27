@@ -20,4 +20,5 @@ STARTING DATABASE.
         ===>any better database for this project suggest and keep update the group member
 ABOUT THE REGISTERATION:
         ====> registeration is performed by the age of the custumer and the licence of the parents so no need
+        ====> check the structure i use or the method and if it's not good comment me and do what you need to do.
         
