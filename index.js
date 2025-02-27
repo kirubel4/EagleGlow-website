@@ -1,6 +1,7 @@
 import express from "express"
 import bodyParser from "body-parser"
 import pg from "pg";
+import ejs from "ejs";
 import axios from "axios";
 
 const app = express();
@@ -36,19 +37,16 @@ app.get("/schedules", (req,res)=>{
     res.render("Schedules.ejs")
 });
 
-app.get("/login", (req,res)=>{
 
-    res.render("Login.ejs")
-});
 
 app.get("/register",(req,res)=>{
-
-    const userName =  req.body.name
-    const phoneNumber = req.body.phoneNumber
-    const age =  req.body.age
-    const currentLevel = req.body.level
-    const sex = req.body.sex
-    res.render("Register.ejs")
+    const data = {
+    name :req.body.name,
+    phoneNumber :req.body.phoneNumber,
+    age : req.body.age,
+    currentLevel: req.body.level,
+    sex : req.body.sex}
+    res.render("Register.ejs",{data:data})
 })
 
 app.listen(port,(req,res)=>{
