@@ -9,8 +9,8 @@ const port = 3000;
 const db = new pg.Client({
     user:"postgres",
     host: "localhost",
-    // database:"Eagleglow",
-    password:"kirag00d",
+    database:"Eagleglow",
+    password:"########",
     port: 5432
 });
 db.connect();
@@ -39,16 +39,25 @@ app.get("/schedules", (req,res)=>{
 
 
 
-app.get("/register",(req,res)=>{
+app.get("/register",async(req,res)=>{
     const data = {
     name :req.body.name,
     phoneNumber :req.body.phoneNumber,
     age : req.body.age,
     currentLevel: req.body.level,
     sex : req.body.sex}
-    res.render("Register.ejs",{data:data})
-})
+    
+    const result = await db.query("SELECT * FROM students WHERE name = $1",[data.name]);
+    const check = result.rows;
+    if (check > 0){
+        prompt("YOU HAVE ALREADY REGISTERD!!!");
+    }else{
+        
+        await db.query("INSERT INTO students values($1,$2,$3,$4,$5)"[data.name,data.phoneNumber,data.age,data.currentLevel,data.sex])
 
+    }
+    res.render("index.ejs")
+});
 app.listen(port,(req,res)=>{
     console.log(`Server in runing on port${port}`);
 })
