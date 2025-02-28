@@ -37,9 +37,11 @@ app.get("/schedules", (req,res)=>{
     res.render("Schedules.ejs")
 });
 
+app.get("/register", (req,res)=>{
+    res.render("Schedules.ejs")
+})
 
-
-app.get("/register",async(req,res)=>{
+app.post("/Register",async(req,res)=>{
     const data = {
     name :req.body.name,
     phoneNumber :req.body.phoneNumber,
@@ -49,11 +51,13 @@ app.get("/register",async(req,res)=>{
     
     const result = await db.query("SELECT * FROM students WHERE name = $1",[data.name]);
     const check = result.rows;
-    if (check > 0){
-        prompt("YOU HAVE ALREADY REGISTERD!!!");
+    if (check.length > 0){
+        return res.send("YOU HAVE ALREADY REGISTERED!!!");
+
     }else{
         
-        await db.query("INSERT INTO students values($1,$2,$3,$4,$5)"[data.name,data.phoneNumber,data.age,data.currentLevel,data.sex])
+        await db.query("INSERT INTO students(name, phoneNumber, age, currentLevel, sex) VALUES($1, $2, $3, $4, $5)", [data.name, data.phoneNumber, data.age, data.currentLevel, data.sex]);
+
 
     }
     res.render("index.ejs")
