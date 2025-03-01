@@ -47,7 +47,9 @@ app.post("/Register",async(req,res)=>{
     phoneNumber :req.body.phoneNumber,
     age : req.body.age,
     currentLevel: req.body.level,
-    sex : req.body.sex}
+    sex : req.body.sex,
+    emergency_phone : req.body.emergency_phone,
+    family_name : req.body.family_name}
     
     const result = await db.query("SELECT * FROM students WHERE name = $1",[data.name]);
     const check = result.rows;
@@ -62,6 +64,7 @@ app.post("/Register",async(req,res)=>{
     }
     res.render("index.ejs")
 });
+
 app.listen(port,(req,res)=>{
     console.log(`Server in runing on port${port}`);
 })
