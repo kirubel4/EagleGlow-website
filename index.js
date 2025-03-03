@@ -9,8 +9,8 @@ const port = 3000;
 const db = new pg.Client({
     user:"postgres",
     host: "localhost",
-    database:"Eagleglow",
-    password:"########",
+    database:"EagleGlow",
+    password:"kirag00d",
     port: 5432
 });
 db.connect();
@@ -58,7 +58,7 @@ app.post("/Register",async(req,res)=>{
 
     }else{
         
-        await db.query("INSERT INTO students(name, phoneNumber, age, currentLevel, sex) VALUES($1, $2, $3, $4, $5)", [data.name, data.phoneNumber, data.age, data.currentLevel, data.sex]);
+        await db.query("INSERT INTO students(name, date_of_birth, phone, sex, emergency_phone, family_name, current_level) VALUES($1, $2, $3, $4, $5, $6, $7)", [data.name, data.age, data.phoneNumber, data.sex ,data.emergency_phone,data.family_name, data.currentLevel]);
 
 
     }

@@ -9,6 +9,32 @@
 </head>
 <body>
     <%- include("partials/header.ejs") %>
-    <h1>hi</h1>
+    <form action="/Register" method="post">
+        <label>
+            Full name:  <input name="name" type="text">
+        </label><br><br>
+        <label>
+            phone:  <input name="phoneNumber" type="text">
+        </label><br><br>
+        <label>
+            age:  <input name="age" type="text">
+        </label><br><br>
+        <label>
+            currentLevel:  <input name="level" type="text">
+        </label><br><br>
+        <label>
+        
+            sex:  <input name="sex" type="radio" value="male" >male
+                    <input name="sex" type="radio" value="female">female
+        </label><br><br>
+        <label>
+            emergency phone :<input name="emergency_phone" type="text">
+        </label><br><br>
+        <label>
+            family name:<input name="family_name" type="text">
+        </label><br><br>
+        <input type="submit" value="submit">
+    </form>
+    
 </body>
 </html>
