@@ -24,4 +24,6 @@ ABOUT THE REGISTERATION:
         ====> check the structure i use or the method and if it's not good comment me and do what you need to do.
 ABOUT THE HOME PAGE(CURRENTLY):
          ===> this is for checking the function of the database so it is temporary no wory afterchecking we will insert the basic ones
-
+ABOUT FRAME WORK:
+        ===> in frontend what should we do seting up the frame work thing????
+        
