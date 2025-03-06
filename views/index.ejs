@@ -10,39 +10,40 @@
 </head>
 <body>
     <%- include("partials/header.ejs") %>
+
+    <h1>hi</h1>
+
     <div class="contener">
         <div class="photo">
-            <img class= "pro"src="../image/wushu.jpg" alt="king">
+            <img class="pro" src="../image/wushu.jpg" alt="king">
         </div>
-
     </div>
 
     <div class="register">
         <form action="/Register" method="post">
             <label>
-             full name <input name="name" type="text" placeholder="name">
+                Full name: <input name="name" type="text" placeholder="name">
             </label><br><br>
             <label>
-                phone:  <input name="phoneNumber" type="text" placeholder="+251">
+                Phone: <input name="phoneNumber" type="text" placeholder="+251">
             </label><br><br>
             <label>
-                age:  <input name="age" type="text" placeholder="2025-03-01">
+                Age: <input name="age" type="text" placeholder="2025-03-01">
             </label><br><br>
             <label>
-                currentLevel:  <input name="level" type="text" placeholder="red">
+                Current Level: <input name="level" type="text" placeholder="red">
             </label><br><br>
             <label>
-            
-                sex:  <input name="sex" type="radio" value="male" >male
-                        <input name="sex" type="radio" value="female">female
+                Sex: <input name="sex" type="radio" value="male"> Male
+                <input name="sex" type="radio" value="female"> Female
             </label><br><br>
             <label>
-                emergency phone :<input name="emergency_phone" type="text">
+                Emergency phone: <input name="emergency_phone" type="text">
             </label><br><br>
             <label>
-                family name:<input name="family_name" type="text">
+                Family name: <input name="family_name" type="text">
             </label><br><br>
-            <input type="submit" value="submit">
+            <input type="submit" value="Submit">
         </form>
     </div>
     
