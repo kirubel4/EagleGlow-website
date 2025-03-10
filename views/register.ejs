@@ -1,0 +1,37 @@
+<%- include("partials/header") -%>
+
+<div class="contener">
+    <div class="photo">
+        <img class="pro" src="../image/wushu.jpg" alt="king">
+    </div>
+</div>
+
+<div class="register">
+    <form action="/Register" method="post">
+        <label>
+            Full name: <input name="name" type="text" placeholder="name">
+        </label><br><br>
+        <label>
+            Phone: <input name="phoneNumber" type="text" placeholder="+251">
+        </label><br><br>
+        <label>
+            Age: <input name="age" type="text" placeholder="2025-03-01">
+        </label><br><br>
+        <label>
+            Current Level: <input name="level" type="text" placeholder="red">
+        </label><br><br>
+        <label>
+            Sex: <input name="sex" type="radio" value="male"> Male
+            <input name="sex" type="radio" value="female"> Female
+        </label><br><br>
+        <label>
+            Emergency phone: <input name="emergency_phone" type="text">
+        </label><br><br>
+        <label>
+            Family name: <input name="family_name" type="text">
+        </label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>  
+        
+<%- include("partials/footer") -%>

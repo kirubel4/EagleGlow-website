@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .photo{
     display: flex;
     justify-content: center;
@@ -11,4 +12,10 @@
     align-items: center;
     margin: 20px;
 
+=======
+
+body{
+    display: flex;
+    flex-direction: column;
+>>>>>>> origin/no-conflicts
 }
