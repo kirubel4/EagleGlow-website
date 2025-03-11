@@ -1,29 +1,35 @@
-import express from "express"
-import bodyParser from "body-parser"
+import express from "express";
+import bodyParser from "body-parser";
 import pg from "pg";
-// import ejs from "ejs";
-// import axios from "axios";
+import { fileURLToPath, pathToFileURL } from 'url';
+import { dirname, join } from 'path';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 let lan;
-try {
-    // Convert path to file URL to this format => "file://" on Windows
-    const languageFileUrl = pathToFileURL(join(__dirname, 'language.js')).href;
-    lan = await import(languageFileUrl);
-} catch (error) {
-    console.error("Failed to import language.js:", error);
+async function loadLanguage() {
+    try {
+        const languageFileUrl = pathToFileURL(join(__dirname, 'language.js')).href;
+        lan = await import(languageFileUrl);
+    } catch (error) {
+        console.error("Failed to import language.js:", error);
+    }
 }
+await loadLanguage();
 
 const app = express();
 const port = 3000;
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json()); // on new version the bodypaser is add together with the express debendency
+app.use(express.json());
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
+const de = process.env;
 const db = new pg.Client({
     user: de.DB_USER,
     host: de.DB_HOST,
@@ -31,55 +37,51 @@ const db = new pg.Client({
     password: de.DB_PASSWORD,
     port: de.DB_PORT,
 });
-db.connect();
+
 db.connect().catch(err => {
     console.error("Database connection failed:", err);
     process.exit(1);
 });
 
 app.get("/", (req,res)=>{
-    res.render("index.ejs")
+    res.render("home",{ language: "english" ,  cssFile: "style.css" });
 });
 
-app.get('/home', (req, res) => res.redirect('/')); // Redirect /home to "/"
+app.get('/home', (req, res) => res.redirect('/'));
 
-app.get("/about", (req,res)=>{
-    res.render("about",{ language: "english" ,  cssFile: "about.css" });
+app.get("/about", (req, res) => {
+    res.render("about", { language: "english", cssFile: "about.css" });
 });
 
-app.get("/contact", (req,res)=>{
-    res.render("contact",{ language: "english" ,  cssFile: "contact.css" });
+app.get("/contact", (req, res) => {
+    res.render("contact", { language: "english", cssFile: "contact.css" });
 });
 
-app.get("/classes", (req,res)=>{
-    res.render("classes",{ language: "english" ,  cssFile: "classes.css" });
+app.get("/classes", (req, res) => {
+    res.render("classes", { language: "english", cssFile: "classes.css" });
 });
 
-app.get("/schedules", (req,res)=>{
-    res.render("schedules",{ language: "english" ,  cssFile: "schedules.css" });
+app.get("/schedules", (req, res) => {
+    res.render("schedules", { language: "english", cssFile: "schedules.css" });
 });
 
-app.get("/register", (req,res)=>{
-    res.render("register",{ language: "english" ,  cssFile: "register.css" });
-})
+app.get("/register", (req, res) => {
+    res.render("register", { language: "english", cssFile: "register.css" });
+});
 
-app.post('*', async  function (req, res)  {
-
-    //handels language changes
-    const referer = await req.get('referer') || '/';  // Default to home if no referer
+app.post('*', async function (req, res, next) {
+    const referer = req.get('referer') || '/';
     try {
         lan.changeLanguage(referer);
         res.redirect(referer);
     } catch (error) {
-        next(error); // Pass error to Express error handler
+        next(error);
     }
 });
-
 
 app.post("/register", async (req, res) => {
     try {
         const con = req.body;
-
         const data = {
             name: con.name,
             phoneNumber: con.phoneNumber,
@@ -107,6 +109,7 @@ app.post("/register", async (req, res) => {
         res.status(500).send("Internal Server Error");
     }
 });
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
