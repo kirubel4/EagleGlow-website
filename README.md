@@ -22,4 +22,7 @@ STARTING DATABASE.
 ABOUT THE REGISTERATION:
         ====> registeration is performed by the age of the custumer and the licence of the parents so no need
         ====> check the structure i use or the method and if it's not good comment me and do what you need to do.
+ABOUT THE HOME PAGE(CURRENTLY):
+         ===> this is for checking the function of the database so it is temporary no wory afterchecking we will insert the basic ones
 
+BRANCH IS UPDATED SO EVERY ONE WILL WORK IN OWN BRANCH

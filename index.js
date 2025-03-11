@@ -1,8 +1,7 @@
 import express from "express"
+import bodyParser from "body-parser"
 import pg from "pg";
-import dotenv from "dotenv";
-import { fileURLToPath, pathToFileURL } from 'url';
-import { dirname, join } from 'path';
+// import ejs from "ejs";
 // import axios from "axios";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -20,20 +19,17 @@ try {
 const app = express();
 const port = 3000;
 
-dotenv.config();
-const de = process.env;
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); // on new version the bodypaser is add together with the express debendency
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 const db = new pg.Client({
-    user: de.DB_USER,
-    host: de.DB_HOST,
-    database: de.DB_NAME,
-    password: de.DB_PASSWORD,
-    port: de.DB_PORT,
+    user:"postgres",
+    host: "localhost",
+    database:"EagleGlow",
+    password:"kirag00d",
+    port: 5432
 });
 db.connect().catch(err => {
     console.error("Database connection failed:", err);
@@ -41,7 +37,7 @@ db.connect().catch(err => {
 });
 
 app.get("/", (req,res)=>{
-    res.render("home",{ language: "english" ,  cssFile: "style.css" });
+    res.render("index.ejs")
 });
 
 app.get('/home', (req, res) => res.redirect('/')); // Redirect /home to "/"
@@ -49,6 +45,7 @@ app.get('/home', (req, res) => res.redirect('/')); // Redirect /home to "/"
 app.get("/about", (req,res)=>{
     res.render("about",{ language: "english" ,  cssFile: "about.css" });
 });
+
 app.get("/contact", (req,res)=>{
     res.render("contact",{ language: "english" ,  cssFile: "contact.css" });
 });
