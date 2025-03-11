@@ -25,12 +25,13 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 const db = new pg.Client({
-    user:"postgres",
-    host: "localhost",
-    database:"EagleGlow",
-    password:"kirag00d",
-    port: 5432
+    user: de.DB_USER,
+    host: de.DB_HOST,
+    database: de.DB_NAME,
+    password: de.DB_PASSWORD,
+    port: de.DB_PORT,
 });
+db.connect();
 db.connect().catch(err => {
     console.error("Database connection failed:", err);
     process.exit(1);
