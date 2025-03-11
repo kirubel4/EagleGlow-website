@@ -11,6 +11,8 @@ const translations = {
       description: "ይህ ናሙና ጽሑፍ ነው።"
     }
   };
+
+  // localStorage.
   
 export function changeLanguage  (redirect) {
     console.log(redirect);
