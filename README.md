@@ -26,3 +26,5 @@ ABOUT THE HOME PAGE(CURRENTLY):
          ===> this is for checking the function of the database so it is temporary no wory afterchecking we will insert the basic ones
 
 BRANCH IS UPDATED SO EVERY ONE WILL WORK IN OWN BRANCH
+
+WORKING ON THE THE API OF THE MAP THING HOW DO WE DO IT AND WHERE I JUST WRITE JS FOR IT BUT WHER?
