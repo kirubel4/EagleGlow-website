@@ -4,6 +4,7 @@ import pg from "pg";
 import { fileURLToPath, pathToFileURL } from 'url';
 import { dirname, join } from 'path';
 import dotenv from 'dotenv';
+import path from "path";
 
 dotenv.config();
 
@@ -27,8 +28,8 @@ const port = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.set('view engine', 'ejs');
-app.use(express.static("public"));
-
+// app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 const de = process.env;
 const db = new pg.Client({
     user: de.DB_USER,
@@ -54,8 +55,9 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/contact", (req, res) => {
-    res.render("contact", { language: "english", cssFile: "contact.css" });
+    res.sendFile(path.join(__dirname, "public/html/contact.html"), { language: "english", cssFile: "classes.css" });
 });
+
 
 app.get("/classes", (req, res) => {
     res.render("classes", { language: "english", cssFile: "classes.css" });
