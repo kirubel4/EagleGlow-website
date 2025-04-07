@@ -26,3 +26,32 @@ ABOUT THE HOME PAGE(CURRENTLY):
          ===> this is for checking the function of the database so it is temporary no wory afterchecking we will insert the basic ones
 
 BRANCH IS UPDATED SO EVERY ONE WILL WORK IN OWN BRANCH
+
+📂 EAGLEGLOW-WEBSITE
+│── 📂 server       # Backend (Node.js, Express)
+│   ├── 📂 node_modules 
+│   ├── language.js 
+│   ├── .env
+│   ├── index.js  # Entry point for backend
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── 📂 routes
+│   │   └── studentRoutes.js
+│   ├── 📂 controllers
+│   │   └── studentController.js
+│   ├── 📂 services
+│   │   └── studentService.js
+│── 📂 client       # Frontend (HTML, CSS, Vanilla JavaScript)
+│   ├── 📂 public
+│   │   ├── 📂 css
+│   │   ├── 📂 assets
+│   │   │   ├── 📂 image
+│   │   │   ├── 📂 partials
+│   │   │   │   ├── header.html
+│   │   │   │   ├── footer.html
+│   │   ├── 📂 js
+│   │   │   ├── api.js  # Handles API calls
+│   │   │   ├── script.js  # Handles frontend logic
+│   │   ├── home.html  # Main webpage
+│   │   ├── about.html
+│   │   ├── register.html
