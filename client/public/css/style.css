@@ -1,0 +1,20 @@
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
