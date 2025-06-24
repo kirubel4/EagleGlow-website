@@ -1,0 +1,47 @@
+
+📌 Viewer Plan (Before Login)
+-----------------------------------
+🏠 Home Page:
+   - 🎥 Visual Appeal: Engaging images & videos showcasing Wushu.
+   - 🔥 Call-to-Actions (CTAs): "Join a Trial Class" / "Register Now."
+   - 📜 Brief Overview: Short summary of what the school offers with quick links.
+
+ℹ️ About Us:
+   - 🧑‍🏫 Instructors' Profiles & Experience.
+   - 📖 History & Philosophy of the school.
+
+🥋 Classes:
+   - 📌 Training Programs: Beginner, Intermediate, Advanced, Specialized.
+   - 💻 Online Learning: Video tutorials / Live streaming classes (if applicable).
+
+📅 Schedules:
+   - 🏋️ Class Timings: Details of different training sessions.
+   - 🎭 Events Calendar: List of upcoming events, workshops, competitions.
+
+⭐ Testimonials:
+   - 📢 Student Reviews & Success Stories.
+
+📞 Contact Us:
+   - 📍 Location Map & Directions.
+   - ✉️ Contact Form & Details.
+
+-----------------------------------
+👤 User Plan (After Login)
+-----------------------------------
+🏠 Dashboard:
+   - 🔄 Change Membership Status (Upgrade/Downgrade).
+   - 🎯 Progress Bar tracking watched e-learning videos.
+   - 🏋️ Quick links to upcoming classes & events.
+
+📅 Calendar:
+   - 📆 Interactive class schedules & event booking.
+   - 🔔 Option to register/cancel classes.
+
+🎥 E-Learning:
+   - 📚 Training videos organized by level (Beginner, Intermediate, Advanced).
+   - ✅ Mark videos as completed (updates progress bar).
+
+⚙️ Settings:
+   - 📝 Edit Profile (Name, Email, Password, Preferences).
+   - 🔔 Notification Settings.
+   - 🚪 Logout Option.
