@@ -1,5 +1,5 @@
 import master1 from "../assets/master1.jpg";
-// landing page componet
+// landing page componet with function
 function Landing() {
   const applyGradientToWords = (text) => {
   return text.split(" ").map((word, index) => (
