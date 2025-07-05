@@ -1,5 +1,5 @@
 # EagleGlow-website
-install express and body-parser and check the current commit what in the home page should be inserted and no update in the index.js(renaming variables),index.ejs
+install express and body-parser and check the current commit what in the index page should be inserted and no update in the index.js(renaming variables),index.ejs
 
 ABOUT THE FILES CREATED IN THE REPO
         == the public folder used for only static files like html,css 
@@ -11,7 +11,7 @@ ABOUT THE JESON.LOCK PACKAGES
 ABOUT THE EJS FILE.
         ===>it is almost same as html but in ejs files we can use js in it make the web react well so the main pages will be ejs file instade of html the rest can be 
                 html as u want.
-ABOUT THE HOME PAGE HEADER
+ABOUT THE index PAGE HEADER
         ===> see the code of the navbar and check the bootstrap official website and select the navbar which should be appled for this job.
 
 STARTING DATABASE.
@@ -22,7 +22,7 @@ STARTING DATABASE.
 ABOUT THE REGISTERATION:
         ====> registeration is performed by the age of the custumer and the licence of the parents so no need
         ====> check the structure i use or the method and if it's not good comment me and do what you need to do.
-ABOUT THE HOME PAGE(CURRENTLY):
+ABOUT THE index PAGE(CURRENTLY):
          ===> this is for checking the function of the database so it is temporary no wory afterchecking we will insert the basic ones
 
 BRANCH IS UPDATED SO EVERY ONE WILL WORK IN OWN BRANCH
@@ -52,6 +52,6 @@ BRANCH IS UPDATED SO EVERY ONE WILL WORK IN OWN BRANCH
 │   │   ├── 📂 js
 │   │   │   ├── api.js  # Handles API calls
 │   │   │   ├── script.js  # Handles frontend logic
-│   │   ├── home.html  # Main webpage
+│   │   ├── index.html  # Main webpage
 │   │   ├── about.html
 │   │   ├── register.html

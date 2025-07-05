@@ -22,7 +22,7 @@ app.use(express.static(join(__dirname, '../client/public/')));
 app.use("/students", studentRoutes);
 
 app.get('/', (req, res) => {
-    res.sendFile(join(__dirname, '../client/public/home.html'));
+    res.sendFile(join(__dirname, '../client/public/index.html'));
 });
 
 

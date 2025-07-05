@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
             emergency_phone: document.getElementById("emergency_phone").value,
             family_name: document.getElementById("family_name").value
         };
+        console.log("i was here");
         await registerStudent(studentData);
     });
 });

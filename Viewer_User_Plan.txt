@@ -1,7 +1,7 @@
 
 📌 Viewer Plan (Before Login)
 -----------------------------------
-🏠 Home Page:
+🏠 index Page:
    - 🎥 Visual Appeal: Engaging images & videos showcasing Wushu.
    - 🔥 Call-to-Actions (CTAs): "Join a Trial Class" / "Register Now."
    - 📜 Brief Overview: Short summary of what the school offers with quick links.
