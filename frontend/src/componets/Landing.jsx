@@ -44,14 +44,14 @@ function Landing() {
           <div className="text-[#FFD900] font-bold">{applyGradientToWords('The Art Of Wushu"')}</div>
         </h1>
         <p
-  className="mt-4 text-md ml-[40rem] md:text-lg text-left font-semibold leading-snug bg-clip-text text-transparent"
+  className="font-inter italic mt-4  ml-[40rem] md:text-lg text-left font-bold leading-snug bg-clip-text text-transparent"
   style={{
     backgroundImage:
-      "linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 5%, #FFD900 100%)",
+      "linear-gradient(25deg, #FFFFFF 0%, #FFFFFF 1%, #FFD900 100%)",
   }}
 >
-  "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times."
-  <br /> — Bruce Lee
+  "<span class="text-white">I </span>Fear Not The Man Who Has Practiced <span className="font-ultra-bold text-[19px]">10,000 Kicks Once</span>,<br /> <span class="text-white">But I Fear The Man</span> Who Has Practiced <span className="font-ultra-bold text-[19px]">One Kick 10,000 Times</span>."
+  <br /><span class="text-white">— Bruce Lee</span>
 </p>
 
 
