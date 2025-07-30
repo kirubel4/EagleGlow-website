@@ -20,6 +20,7 @@ function Nav(){
             setIsMobileMenuShown(!isMobileMenuShown);
         }
     return (
+        // Nav bar mobile and desktop mode
         <nav className="flex bg-[#1B1A1A] flex-wrap items-center justify-between px-4">
             <Link to="/">
             <div>
