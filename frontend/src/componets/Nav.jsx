@@ -20,7 +20,8 @@ function Nav(){
             setIsMobileMenuShown(!isMobileMenuShown);
         }
     return (
-        <nav className="flex bg-[#1B1A1A] flex-wrap items-center justify-between px-4">
+        <nav className="flex  flex-wrap items-center justify-between px-4 bg-gradient-to-b from-[#333333] from-100% to-[#CCCCCC] to-100%
+">
             <Link to="/">
             <div>
                 <div className="flex">
