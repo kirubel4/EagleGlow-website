@@ -14,7 +14,6 @@ function Nav() {
     { name: "Contact us", path: "/Contact" },
   ];
 
-
   const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
   const [language, setLanguage] = useState("en");
   const [langOpen, setLangOpen] = useState(false);           // desktop dropdown
@@ -291,3 +290,4 @@ function Nav(){
 
 
 export default Nav;
+
