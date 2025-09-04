@@ -13,6 +13,16 @@ function Footer() {
     <footer className="bg-[#1B1A1A]">
       <div className="px-4 py-8">
         <div className="flex flex-row justify-around px-10 max-w-screen-xl mx-auto flex-wrap">
+           <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+            <h1 className="text-[#FFD900] text-3xl">Quick Link</h1>
+            <div className="py-4 flex flex-col gap-2">
+              <a href="#" className="text-white">About us</a>
+              <a href="#" className="text-white">Gallery</a>
+              <a href="#" className="text-white">Classes</a>
+              <a href="#" className="text-white">Schedule</a>
+              <a href="#" className="text-white">Contact us</a>
+            </div>
+          </div>
           {/* Column 1 */}
           <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
             <div className="flex items-start">
@@ -39,16 +49,7 @@ function Footer() {
           </div>
 
           {/* Column 2 */}
-          <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-            <h1 className="text-[#FFD900] text-3xl">Quick Link</h1>
-            <div className="py-4 flex flex-col gap-2">
-              <a href="#" className="text-white">About us</a>
-              <a href="#" className="text-white">Gallery</a>
-              <a href="#" className="text-white">Classes</a>
-              <a href="#" className="text-white">Schedule</a>
-              <a href="#" className="text-white">Contact us</a>
-            </div>
-          </div>
+         
 
           {/* Column 3 */}
           <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
