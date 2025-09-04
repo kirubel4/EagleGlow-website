@@ -1,4 +1,3 @@
-#main space
 import { BrowserRouter } from "react-router-dom";
 import HomePage from "./page/home";
 import Nav from "./componets/Nav";
