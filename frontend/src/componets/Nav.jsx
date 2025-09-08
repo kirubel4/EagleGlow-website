@@ -60,7 +60,7 @@ function Nav() {
   }
 
   return (
-    <nav className="relative z-50 flex flex-wrap items-center justify-between px-4 py-2 bg-gradient-to-b from-[#333] to-[#666]">
+    <nav className="relative z-50 flex flex-wrap items-center justify-between px-4 py-2 bg-gradient-to-b from-[#000] to-[#555]">
       {/* Logo */}
       <Link to="/" onClick={() => setIsMobileMenuShown(false)}>
         <div className="flex items-center">
