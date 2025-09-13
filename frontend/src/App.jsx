@@ -4,7 +4,7 @@ import Nav from "./componets/Nav";
 function App() {
   return (
    <BrowserRouter>
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-[#252525]">
           <HomePage />
       </div>
     </BrowserRouter>
