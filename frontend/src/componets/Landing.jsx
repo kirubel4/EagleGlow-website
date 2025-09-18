@@ -1,11 +1,10 @@
 import { BiRightArrowCircle } from "react-icons/bi"; 
-import { BiRightArrow } from "react-icons/bi"; 
-import master1 from "../assets/master1.jpg";
 import photo1 from "../assets/photo1.jpg";
 import photo2 from "../assets/photo2.jpg";
 import photo3 from "../assets/photo3.jpg";
 import masterendale from "../assets/masterendale.jpg";
 import {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 
 function Landing() {
   const images = [photo1, photo2, photo3];
@@ -68,7 +67,12 @@ function Landing() {
              Tae Bo, and Aerobics. While our martial arts and fitness classes are taught separately, they are all guided by the same purpose: helping people build confidence, discipline, and a sense of community. This is further supported by our unique mentorship program,
               designed to provide personalized guidance for every member.
           </p>
-          <button className="bg-yellow-500 rounded-sm ml-14 mt-3">LEARN MORE<BiRightArrowCircle /></button>
+          <Link href="/about-us">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-semibold px-6 py-2 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300 ml-14 mt-3">
+              LEARN MORE
+              <BiRightArrowCircle className="text-xl" />
+            </button>
+          </Link>
         </div>
 
         {/* Photo block */}
@@ -76,7 +80,7 @@ function Landing() {
           <img
             src={masterendale}
             alt="master endale"
-            className="max-w-xs md:max-w-sm lg:max-w-md object-contain rounded-xl w-52 h-60 ml-10"
+            className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover rounded-2xl ml-20 shadow-lg"
           />
         </div>
       </div>
