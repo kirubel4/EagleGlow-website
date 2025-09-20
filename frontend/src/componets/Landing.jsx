@@ -85,6 +85,18 @@ function Landing() {
         </div>
       </div>
 
+      {/* Our moment */}
+      <div className="mt-7">
+        <h1 className="text-center text-white text-4xl font-super-bold">OUR MOMENTS</h1>
+        <p className="text-center text-white">Dicover our journey through pictures</p>
+          <div className="grid grid-cols-2 gap-2 w-fit mx-auto mt-10">
+            <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] object-cover" />
+            <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] object-cover" />
+            <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] object-cover" />
+            <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] object-cover" />
+          </div>
+      </div>
+
   </>);
   };
 
