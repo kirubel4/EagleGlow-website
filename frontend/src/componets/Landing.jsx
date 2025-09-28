@@ -1,3 +1,7 @@
+import { FaHeartbeat } from "react-icons/fa"; 
+import { FaRunning } from "react-icons/fa"; 
+import { CgYinyang } from "react-icons/cg"; 
+import { BsYinYang } from "react-icons/bs"; 
 import { BiRightArrowCircle } from "react-icons/bi"; 
 import photo1 from "../assets/photo1.jpg";
 import photo2 from "../assets/photo2.jpg";
@@ -58,32 +62,40 @@ function Landing() {
 
 
        {/* Our story section  */}
-     <div className="flex flex-col md:flex-row  text-white items-center gap-6 mt-10 mb-10">
-        {/* Text block */}
-        <div className="flex-1 text-center md:text-left">
-          <h1 className="text-3xl font-bold mb-4 ml-14">OUR STORY</h1>
-          <p className="items-center ml-14">
-            EagleGlow was founded in 2002 by Master Endale Melse with a vision to create a space where people could grow stronger—in both body and mind. What started with a foundation in Chinese martial arts later expanded to include modern fitness programs like Zumba,
-             Tae Bo, and Aerobics. While our martial arts and fitness classes are taught separately, they are all guided by the same purpose: helping people build confidence, discipline, and a sense of community. This is further supported by our unique mentorship program,
-              designed to provide personalized guidance for every member.
-          </p>
-          <Link href="/about-us">
-            <button className="flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-semibold px-6 py-2 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300 ml-14 mt-3">
-              LEARN MORE
-              <BiRightArrowCircle className="text-xl" />
-            </button>
-          </Link>
-        </div>
+     <div className="flex text-white items-center gap-6 mt-10 mb-10">
+  {/* Image block */}
+  <div className="w-1/2 flex justify-center">
+    <img
+      src={masterendale}
+      alt="Master Endale"
+      className="rounded-[20px] w-[140px] h-[180px] sm:w-[180px] sm:h-[220px] md:w-[250px] md:h-[320px] object-cover"
+    />
+  </div>
 
-        {/* Photo block */}
-        <div className="flex-1 justify-center">
-          <img
-            src={masterendale}
-            alt="master endale"
-            className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover rounded-2xl ml-20 shadow-lg"
-          />
-        </div>
-      </div>
+  {/* Text block */}
+  <div className="w-1/2 text-center md:text-left px-2 sm:px-4">
+    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">OUR STORY</h1>
+    <p className="text-xs sm:text-sm md:text-base leading-relaxed">
+      EagleGlow was founded in 2002 by Master Endale Melse with a vision to
+      create a space where people could grow stronger—in both body and mind.
+      What started with a foundation in Chinese martial arts later expanded to
+      include modern fitness programs like Zumba, Tae Bo, and Aerobics. While
+      our martial arts and fitness classes are taught separately, they are all
+      guided by the same purpose: helping people build confidence, discipline,
+      and a sense of community. This is further supported by our unique
+      mentorship program, designed to provide personalized guidance for every
+      member.
+    </p>
+    <Link href="/about-us">
+      <button className="flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-semibold px-4 py-2 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300 mx-auto md:mx-0 mt-3 text-sm sm:text-base">
+        LEARN MORE
+        <BiRightArrowCircle className="text-lg sm:text-xl" />
+      </button>
+    </Link>
+  </div>
+</div>
+
+
 
       {/* Our moment */}
       <div className="mt-7">
@@ -94,6 +106,36 @@ function Landing() {
             <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] object-cover" />
             <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] object-cover" />
             <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] object-cover" />
+          </div>
+
+          <div className="flex items-center justify-center">
+            <Link href="/some-page">
+              <button className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-semibold px-6 py-2 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300 ml-14 mt-5">
+                VIEW MORE
+              </button>
+            </Link>
+          </div>
+
+          {/* our program */}
+          <div className="mt-5">
+            <h1 className="text-white font-extrabold text-4xl text-center">OUR PROGRAM</h1>
+            <p className="text-white text-center">Choose your perfect training time</p>
+
+            <div className="flex justify-center gap-5 ">
+              <div className="flex flex-col">
+                <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px]"/>
+                    <p className="flex gap-2 text-3xl align-middle font-extralight text-white "><BsYinYang className=""style={{ color: '#FFD700' }} size={40} />WUSHU</p>
+                    <p className="max-w-sm text-white">Our Wushu program builds strength and discipline through Taolu (forms) and Sanda (sparring),
+                       blending tradition with modern practice.</p>
+              </div>
+              <div className="flex flex-col">
+                <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] align-center-center"/>
+                <div>
+                    <p className="flex"><FaRunning /><FaHeartbeat /></p>
+                  
+                </div>
+              </div>
+            </div>
           </div>
       </div>
 
