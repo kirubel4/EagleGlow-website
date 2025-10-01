@@ -1,3 +1,4 @@
+import { FaRegHandshake } from "react-icons/fa"; 
 import { GiPunchingBag } from "react-icons/gi"; 
 import { MdSportsMartialArts } from "react-icons/md"; 
 import { GiJumpingRope } from "react-icons/gi"; 
@@ -77,9 +78,9 @@ function Landing() {
   </div>
 
   {/* Text block */}
-  <div className="w-1/2 text-center md:text-left px-2 sm:px-4">
+  <div className="w-1/2  md:text-left px-2 sm:px-4">
     <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">OUR STORY</h1>
-    <p className="text-xs sm:text-sm md:text-base leading-relaxed">
+    <p className="sm:text-[9px] md:text-base leading-relaxed">
       EagleGlow was founded in 2002 by Master Endale Melse with a vision to
       create a space where people could grow stronger—in both body and mind.
       What started with a foundation in Chinese martial arts later expanded to
@@ -131,7 +132,7 @@ function Landing() {
                 <p className="mt-4 flex gap-2 text-3xl items-center font-extralight text-white">
                   <BsYinYang style={{ color: "#FFD700" }} size={40} /> WUSHU
                 </p>
-                <p className="mt-5 max-w-sm text-white"> Our Wushu program builds strength and discipline through
+                <p className="ml-3 mt-5 max-w-sm text-white"> Our Wushu program builds strength and discipline through
                   <span className="text-[#FFD700]"> Taolu</span> (forms) and
                   <span className="text-[#FFD700]"> Sanda</span> (sparring), blending
                   tradition with modern practice.
@@ -161,18 +162,18 @@ function Landing() {
                   alt=""
                   className="rounded-[20px] w-[180px] h-[220px]"
                 />
-                <p className="mt-4 flex gap-2 text-3xl items-center font-extralight text-white">
+                <p className="mt-4 mr-2 flex gap-2 text-3xl items-center font-extralight text-white">
                   <FaRunning style={{ color: "#FFD700" }} size={40} />
                   <FaHeartbeat style={{ color: "#FFD700" }} size={40} /> FITNESS
                 </p>
-                <p className="mt-5 max-w-sm text-white">
+                <p className=" mt-5 max-w-sm text-white">
                   Our fitness program brings energy and fun through
-                  <span className="text-[#FFD700]"> Tae Bo</span>,{" "}
-                  <span className="text-[#FFD700]"> Zumba</span>, and{" "}
-                  <span className="text-[#FFD700]"> Aerobics</span>, helping you stay
+                  <span className=" text-[#FFD700]"> Tae Bo</span>,{" "}
+                  <span className=" text-[#FFD700]"> Zumba</span>, and{" "}
+                  <span className=" text-[#FFD700]"> Aerobics</span>, helping you stay
                   active, strong, and motivated.
                 </p>
-                <div className="mt-4 flex gap-8">
+                <div className="lg:mt-4 mt-14 sm:mt-4 flex gap-8">
                   <div className="flex flex-col items-center">
                     <div className="w-16 h-16 rounded-full border-4 border-yellow-400 flex items-center justify-center">
                       <GiJumpingRope style={{ color: "#FFD700" }} size={30} />
@@ -191,6 +192,16 @@ function Landing() {
             </div>
 
           </div>
+
+          <div className="flex justify-center items-center w-full mt-6">
+            <div className="border-4 gap-2 border-yellow-400 rounded-[40px] px-4 py-2 w-[360px] flex items-center justify-center ">
+              <FaRegHandshake className="text-yellow-400 "size={60}/>
+              <p className="text-white  md:text-[12px] sm:text-[8px] leading-snug">
+                In addition to training, we also provide <span className=" text-[#FFD700]"> mentorship</span>,{" "} 
+                to support your personal growth and journey.
+              </p>
+            </div>
+</div>
       </div>
 
   </>);
