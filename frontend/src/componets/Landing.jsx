@@ -1,3 +1,4 @@
+import { AiOutlineSchedule } from "react-icons/ai"; 
 import { FaRegHandshake } from "react-icons/fa"; 
 import { GiPunchingBag } from "react-icons/gi"; 
 import { MdSportsMartialArts } from "react-icons/md"; 
@@ -195,13 +196,79 @@ function Landing() {
 
           <div className="flex justify-center items-center w-full mt-6">
             <div className="border-4 gap-2 border-yellow-400 rounded-[40px] px-4 py-2 w-[360px] flex items-center justify-center ">
-              <FaRegHandshake className="text-yellow-400 "size={60}/>
+              <FaRegHandshake className="text-yellow-400 "size={30}/>
               <p className="text-white  md:text-[12px] sm:text-[8px] leading-snug">
                 In addition to training, we also provide <span className=" text-[#FFD700]"> mentorship</span>,{" "} 
                 to support your personal growth and journey.
               </p>
             </div>
-</div>
+          </div>
+      </div>
+
+      {/* Our schedules */}
+
+      <div>
+          <p className="justify-center mt-6 align-middle flex gap-2 text-3xl font-extrabold text-white"><AiOutlineSchedule className="grid align-top text-yellow-400 "size={40} />OUR SCHEDULES</p>
+          <p className="align-bottom text-white text-center text-md">Find the best time to train with us</p>
+          <div className="flex flex-col md:flex-row gap-4 justify-center p-6">
+        {/* Monday */}
+        <div className="w-full md:w-64 rounded-2xl shadow-md p-4 bg-white">
+          <h2 className="text-xl font-semibold mb-4 text-center">Monday</h2>
+          <ul className="space-y-2 text-sm">
+          <li className="flex items-center gap-2">
+          <span><BsYinYang  size={25} /></span>
+          <span className="font-medium">12:00 AM</span>
+          <span className="text-gray-600">- Wushu</span>
+          </li>
+          <li className="flex items-center gap-2">
+          <span className="text-xl">🏋️</span>
+          <span className="font-medium">12:00 PM</span>
+          <span className="text-gray-600">- Fitness</span>
+          </li>
+          </ul>
+        </div>
+
+
+        {/* Tuesday */}
+        <div className="w-full md:w-64 rounded-2xl shadow-md p-4 bg-white">
+          <h2 className="text-xl font-semibold mb-4 text-center">Tuesday</h2>
+          <ul className="space-y-2 text-sm">
+          <li className="flex items-center gap-2">
+          <span className="text-xl">🏋️</span>
+          <span className="font-medium">12:00 AM</span>
+          <span className="text-gray-600">- Fitness</span>
+          </li>
+          <li className="flex items-center gap-2">
+          <span><BsYinYang  size={25} /></span>
+          <span className="font-medium">11:00 PM</span>
+          <span className="text-gray-600">- Wushu Kid's</span>
+          </li>
+          <li className="flex items-center gap-2">
+          <span><BsYinYang  size={25} /></span>
+          <span className="font-medium">12:30 AM</span>
+          <span className="text-gray-600">- Wushu</span>
+          </li>
+          </ul>
+        </div>
+
+
+        {/* Wednesday */}
+        <div className="w-full md:w-64 rounded-2xl shadow-md border-2 p-4 bg-white">
+          <h2 className="text-xl font-semibold mb-4 text-center">Wednesday</h2>
+          <ul className="space-y-2 text-sm">
+          <li className="flex items-center gap-2">
+          <span><BsYinYang  size={25} /></span>
+          <span className="font-medium">12:00 AM</span>
+          <span className="text-gray-600">- Wushu</span>
+          </li>
+          <li className="flex items-center gap-2">
+          <span ><BsYinYang  size={25} /></span>
+          <span className="font-medium">12:00 PM</span>
+          <span className="text-gray-600">- Wushu</span>
+          </li>
+          </ul>
+        </div>
+        </div>
       </div>
 
   </>);
