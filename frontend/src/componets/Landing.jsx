@@ -269,6 +269,12 @@ function Landing() {
           </ul>
         </div>
         </div>
+
+          <div className="flex justify-center">
+            <button className="text-black rounded-lg bg-yellow-500 p-2 text-[12px]">
+            VIEW FULL CALENDER
+          </button>
+          </div>
       </div>
 
   </>);
