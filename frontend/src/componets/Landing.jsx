@@ -1,3 +1,10 @@
+import { AiFillYoutube } from "react-icons/ai"; 
+import { AiOutlineInstagram } from "react-icons/ai"; 
+import { FaTelegramPlane } from "react-icons/fa"; 
+import { FaTiktok } from "react-icons/fa"; 
+import { AiOutlineMail } from "react-icons/ai"; 
+import { BiPhone } from "react-icons/bi"; 
+import { CiLocationOn } from "react-icons/ci"; 
 import { AiOutlineSchedule } from "react-icons/ai"; 
 import { FaRegHandshake } from "react-icons/fa"; 
 import { GiPunchingBag } from "react-icons/gi"; 
@@ -15,7 +22,6 @@ import photo3 from "../assets/photo3.jpg";
 import masterendale from "../assets/masterendale.jpg";
 import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-
 function Landing() {
   const images = [photo1, photo2, photo3];
   const [currentImage , setCurrentImage] = useState(0);
@@ -275,6 +281,93 @@ function Landing() {
             VIEW FULL CALENDER
           </button>
           </div>
+      </div>
+
+      {/* GET in touch */}
+
+      <div className="mt-4">
+        <h1 className="text-white font-extrabold text-3xl text-center mt-6">Get in touch</h1>
+        <p className="text-white text-center">Have Questions? We’re here to help</p>
+         <div className=" text-white min-h-screen flex items-center justify-center px-6 py-12">
+      <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12">
+        <div className="space-y-8">
+          {/* Address */}
+          <div className="flex items-start space-x-4">
+            <CiLocationOn className="text-yellow-500 w-6 h-6"/>
+            <div>
+              <h4 className="text-lg font-semibold">Visit Us</h4>
+              <p className="text-gray-300">
+                Gerji Jacros, Woreda 07 <br />
+                Yerer Gulit, Market
+              </p>
+            </div>
+          </div>
+
+          {/* Phone */}
+          <div className="flex items-start space-x-4">
+            <BiPhone className="text-yellow-500 w-6 h-6"/>
+            <div>
+              <h4 className="text-lg font-semibold">Call Us</h4>
+              <p className="text-gray-300">+251-900-636-249</p>
+            </div>
+          </div>
+
+          {/* Email */}
+          <div className="flex items-start space-x-4">
+            <AiOutlineMail className="text-yellow-500 w-6 h-6"/>
+            <div>
+              <h4 className="text-lg font-semibold">Email Us</h4>
+              <p className="text-gray-300">Eagleglow@gmail.com</p>
+            </div>
+          </div>
+
+          {/* Socials */}
+          <div className="flex space-x-4">
+            <a href="#" className="p-3 bg-yellow-500 rounded-full text-black hover:bg-yellow-600">
+              <FaTiktok size={25}/>
+            </a>
+            <a href="#" className="p-3 bg-yellow-500 rounded-full text-black hover:bg-yellow-600">
+              <FaTelegramPlane size={25}/>
+            </a>
+            <a href="#" className="p-3 bg-yellow-500 rounded-full text-black hover:bg-yellow-600">
+              <AiOutlineInstagram size={25}/>
+            </a>
+            <a href="#" className="p-3 bg-yellow-500 rounded-full text-black hover:bg-yellow-600">
+              <AiFillYoutube size={25}/>
+            </a>
+          </div>
+        </div>
+        <form className="space-y-4 bg-transparent">
+          <div>
+            <label className="block text-sm mb-1">Name</label>
+            <input
+              type="text"
+              className="w-full px-4 py-2 bg-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+          </div>
+          <div>
+            <label className="block text-sm mb-1">Email</label>
+            <input
+              type="email"
+              className="w-full px-4 py-2 bg-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+          </div>
+          <div>
+            <label className="block text-sm mb-1">Message</label>
+            <textarea
+              rows="4"
+              className="w-full px-4 py-2 bg-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="w-full bg-yellow-600 text-black py-2 px-4 rounded-md font-semibold hover:bg-yellow-500 flex items-center justify-center gap-2"
+          >
+            SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
       </div>
 
   </>);
