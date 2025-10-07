@@ -13,10 +13,13 @@ import { GiJumpingRope } from "react-icons/gi";
 import { GiBoxingGlove } from "react-icons/gi"; 
 import { FaHeartbeat } from "react-icons/fa"; 
 import { FaRunning } from "react-icons/fa"; 
-import { CgYinyang } from "react-icons/cg"; 
 import { BsYinYang } from "react-icons/bs"; 
 import { BiRightArrowCircle } from "react-icons/bi"; 
 import photo1 from "../assets/photo1.jpg";
+import our1 from "../assets/our1.JPG";
+import our2 from "../assets/our2.JPG";
+import our3 from "../assets/our3.JPG";
+import our4 from "../assets/our4.JPG";
 import fitness from "../assets/fitness.png";
 import wushu from "../assets/wushu.jpeg";
 import photo2 from "../assets/photo2.jpg";
@@ -42,13 +45,11 @@ function Landing() {
   },[]);
 
 
-
-
   return (
     <>
     
         <div className="relative w-full h-screen flex items-center  ">
-        {/* Background */}
+    
         <div
           className={`absolute inset-0 bg-cover bg-center transition-opacity duration-500 ease-in-out ${
             isFading ? "opacity-0" : "opacity-100"
@@ -70,21 +71,12 @@ function Landing() {
           </p>
         </div>
 
-        {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
 
        {/* Our story section  */}
      <div className="flex text-white items-center gap-6 mt-10 mb-10">
-  {/* Image block */}
-  {/* <div className="w-1/2 flex justify-center">
-    <img
-      src={masterendale}
-      alt="Master Endale"
-      className="rounded-[20px] w-[140px] h-[180px] sm:w-[180px] sm:h-[220px] md:w-[250px] md:h-[320px] object-cover"
-    />
-  </div> */}
 
   {/* Text block */}
  <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 md:gap-12 py-12 px-4 sm:px-8 md:px-16">
@@ -137,10 +129,10 @@ function Landing() {
         <h1 className="text-center text-white text-4xl font-super-bold">OUR MOMENTS</h1>
         <p className="text-center text-white">Dicover our journey through pictures</p>
           <div className="grid grid-cols-2 gap-2 w-fit mx-auto mt-10">
-            <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] object-cover" />
-            <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] object-cover" />
-            <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] object-cover" />
-            <img src={masterendale} alt="" className="rounded-[20px] w-[180px] h-[220px] object-cover" />
+            <img src={our1} alt="" className="rounded-[20px] w-[260px] h-[220px] object-cover" />
+            <img src={our2} alt="" className="rounded-[20px] w-[260px] h-[220px] object-cover" />
+            <img src={our3} alt="" className="rounded-[20px] w-[260px] h-[220px] object-cover" />
+            <img src={our4} alt="" className="rounded-[20px] w-[260px] h-[220px] object-cover" />
           </div>
 
           <div className="flex items-center justify-center">
