@@ -145,80 +145,80 @@ function Landing() {
 
           {/* our program */}
           <div className="mt-5">
-  <h1 className="text-white font-extrabold text-4xl text-center">OUR PROGRAM</h1>
-  <p className="text-white text-center">Choose your perfect training time</p>
-
-  <div className="flex justify-center gap-10 mt-4">
-    <div className="flex flex-col items-center">
-      <img
-        src={wushu}
-        alt=""
-        className="rounded-[20px] w-[260px] h-[220px] object-cover mx-1"
-      />
-      <p className="mt-4 flex gap-2 text-3xl items-center font-extralight text-white">
-        <BsYinYang style={{ color: "#FFD700" }} size={40} /> WUSHU
-      </p>
-      <p className="ml-3 mt-5 max-w-sm text-white">
-        Our Wushu program builds strength and discipline through
-        <span className="text-[#FFD700]"> Taolu</span> (forms) and
-        <span className="text-[#FFD700]"> Sanda</span> (sparring), blending
-        tradition with modern practice.
-      </p>
-
-      <div className="mt-4 flex gap-8">
-        <div className="flex flex-col items-center">
-          <div className="w-16 h-16 rounded-full border-4 border-yellow-400 flex items-center justify-center">
-            <MdSportsMartialArts style={{ color: "#FFD700" }} size={30} />
-          </div>
-          <p className="mt-2 text-white">Taolu</p>
-        </div>
-
-        {/* Sanda */}
-        <div className="flex flex-col items-center">
-          <div className="w-16 h-16 rounded-full border-4 border-yellow-400 flex items-center justify-center">
-            <GiBoxingGlove style={{ color: "#FFD700" }} size={30} />
-          </div>
-          <p className="mt-2 text-white">Sanda</p>
-        </div>
-      </div>
-    </div>
-
-    <div className="flex flex-col items-center">
-      <img
-        src={fitness}
-        alt=""
-        className="rounded-[20px] w-[260px] h-[220px] object-cover mx-1"
-      />
-      <p className="mt-4 mr-2 flex gap-2 text-3xl items-center font-extralight text-white">
-        <FaRunning style={{ color: "#FFD700" }} size={40} />
-        <FaHeartbeat style={{ color: "#FFD700" }} size={40} /> FITNESS
-      </p>
-      <p className="mt-5 max-w-sm text-white">
-        Our fitness program brings energy and fun through
-        <span className="text-[#FFD700]"> Tae Bo</span>,{" "}
-        <span className="text-[#FFD700]"> Zumba</span>, and{" "}
-        <span className="text-[#FFD700]"> Aerobics</span>, helping you stay
-        active, strong, and motivated.
-      </p>
-
-      <div className="lg:mt-4 mt-14 sm:mt-4 flex gap-8">
-        <div className="flex flex-col items-center">
-          <div className="w-16 h-16 rounded-full border-4 border-yellow-400 flex items-center justify-center">
-            <GiJumpingRope style={{ color: "#FFD700" }} size={30} />
-          </div>
-          <p className="mt-2 text-white">Zumba</p>
-        </div>
-
-        <div className="flex flex-col items-center">
-          <div className="w-16 h-16 rounded-full border-4 border-yellow-400 flex items-center justify-center">
-            <GiPunchingBag style={{ color: "#FFD700" }} size={30} />
-          </div>
-          <p className="mt-2 text-white">Tae Bo</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+              <h1 className="text-white font-extrabold text-4xl text-center">OUR PROGRAM</h1>
+              <p className="text-white text-center">Choose your perfect training time</p>
+            
+              <div className="flex justify-center gap-10 mt-4">
+                <div className="flex flex-col items-center">
+                  <img
+                    src={wushu}
+                    alt=""
+                    className="rounded-[20px] w-[260px] h-[220px] object-cover mx-1"
+                  />
+                  <p className="mt-4 flex gap-2 text-3xl items-center font-extralight text-white">
+                    <BsYinYang style={{ color: "#FFD700" }} size={40} /> WUSHU
+                  </p>
+                  <p className="ml-3 mt-5 max-w-sm text-white">
+                    Our Wushu program builds strength and discipline through
+                    <span className="text-[#FFD700]"> Taolu</span> (forms) and
+                    <span className="text-[#FFD700]"> Sanda</span> (sparring), blending
+                    tradition with modern practice.
+                  </p>
+            
+                  <div className="mt-4 flex gap-8">
+                    <div className="flex flex-col items-center">
+                      <div className="w-16 h-16 rounded-full border-4 border-yellow-400 flex items-center justify-center">
+                        <MdSportsMartialArts style={{ color: "#FFD700" }} size={30} />
+                      </div>
+                      <p className="mt-2 text-white">Taolu</p>
+                    </div>
+            
+                    {/* Sanda */}
+                    <div className="flex flex-col items-center">
+                      <div className="w-16 h-16 rounded-full border-4 border-yellow-400 flex items-center justify-center">
+                        <GiBoxingGlove style={{ color: "#FFD700" }} size={30} />
+                      </div>
+                      <p className="mt-2 text-white">Sanda</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <div className="flex flex-col items-center">
+                  <img
+                    src={fitness}
+                    alt=""
+                    className="rounded-[20px] w-[260px] h-[220px] object-cover mx-1"
+                  />
+                <p className="mt-4 mr-2 flex gap-2 text-3xl items-center font-extralight text-white">
+                  <FaRunning style={{ color: "#FFD700" }} size={40} />
+                  <FaHeartbeat style={{ color: "#FFD700" }} size={40} /> FITNESS
+                </p>
+                <p className="mt-5 max-w-sm text-white">
+                  Our fitness program brings energy and fun through
+                  <span className="text-[#FFD700]"> Tae Bo</span>,{" "}
+                  <span className="text-[#FFD700]"> Zumba</span>, and{" "}
+                  <span className="text-[#FFD700]"> Aerobics</span>, helping you stay
+                  active, strong, and motivated.
+                </p>
+          
+                <div className="lg:mt-4 mt-14 sm:mt-4 flex gap-8">
+                  <div className="flex flex-col items-center">
+                    <div className="w-16 h-16 rounded-full border-4 border-yellow-400 flex items-center justify-center">
+                      <GiJumpingRope style={{ color: "#FFD700" }} size={30} />
+                    </div>
+                    <p className="mt-2 text-white">Zumba</p>
+                </div>
+        
+                <div className="flex flex-col items-center">
+                  <div className="w-16 h-16 rounded-full border-4 border-yellow-400 flex items-center justify-center">
+                    <GiPunchingBag style={{ color: "#FFD700" }} size={30} />
+                  </div>
+                  <p className="mt-2 text-white">Tae Bo</p>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
 
@@ -396,5 +396,6 @@ function Landing() {
 
   </>);
   };
+
 
 export default Landing;
